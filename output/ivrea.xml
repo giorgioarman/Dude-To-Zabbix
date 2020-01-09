@@ -1,0 +1,2301 @@
+<zabbix_export>
+<Author> Arman Ebrahimi Mehr(https://github.com/giorgioarman)</Author>   <version>4.4</version>
+    <date>2020-01-09T18:14:28.209666</date>
+    <images>
+        <image>
+            <name>Workstation_(64)</name>
+            <imagetype>1</imagetype>
+            <encodedImage>iVBORw0KGgoAAAANSUhEUgAAAEAAAAA7CAYAAADLjIzcAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAG7AAABuwBHnU4NQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABteSURBVGje1VtZjBznca4+5p7ZndnZe5cUT1ESL3FJUaIOUkpk2bAUORIsOYCMBHAAGxCglwQI8mRKD4EeHBsJYNgvCRDEceKIMZJAimJZtmXJ1kUdvMnlvfc9O/fVZ76qv2e4tJYy6cjXkD+6p7vn77++qvrq6F7N9336ffi89NJLcV8P/4FO2iNGyBiJxZLZUqn07tlz505192R/OB7Wjx184gnrRufVfpcBePnln9zk6s7Dmq89gq8PYET5uG4Y0+Vieehb3/4WhcIRsq0GRSJhLxqJT8cTiXfS2Z6XHM97/R+++bfjv1cAHDp0yIilMvuwpkc0oodxaNtq1zEAL734P0Nvv/kz0jSNIvE49fQNkmFGqFxcxsiT6zhkmmY9le46s2795h8Or7/5lZ545/tPP/1EZeVc5pef/ov3J6fGtxm6UdcxMF9ZI60AWPKe6y35vj3nOu50td6YKC3nT1Sry+Pnz59vfnJCv9JFhv0Z3dQfMaPJT+NeXboO8bGQj/vYtk377rmHkokULSzO04Xz52g5lyMbgvueT+FojFKdXbFqrT7yzpuvjayfm/7rAw8++u/46Z9cBQD8aJdlObilGyGN0uT7A2wTvueRh+Hy1nXIdV0KxaKUiQ35d937gAd0bVM3Grph1nRDq2i6VtQZNF9b9Dx3wXOt6Wq1NlVcXhy1LGt8bGys6Afm9o/f+c9tYdN7RNOMh/HbfbqnGb6De2IVvuZjCToxCLquf4zt6lgbfoRr1qzbRP1DN1EhnycLwFjNBi0vL9P01CTlc4sAxaaFhXm6675PG784jambhh0yzUh6xwFqJPpI11zi1Rg+tp5N5Fmk2xZpdoN8q05evao1qnljfmrGKBSL8EktTawwWZRGbb0F+8l0Lxma5g8Ob/D2P/CQE45GQvinh8NhCkd4RCkWiVAkGqEYtBaPRymZTFJ3dzd1dHRSKGSKmX/04xPmoZ07ttPkxCQVm3W51sZafdw5meqgW7ftomqtSsX8Mo2ePEozU5c7PwqApjkw/UjV9qkY6cYkBpmYKIxtBNtI2MR3g6LYRrANhw2KYXunqZHp2wDKA5E4ZDUa1Kw3BH2nXiMLw27UqFnDtlbR7GrZsCoFIz83Q0tLS2JdCjjtKsDY0tRXTe6bSCTo8cceo7Vr1161cA9mPjM7SydPnqRMpot6+wcoWatTDferYFspVygHl6hXK+S4HkDB8FztowDoehM3S4A1yMGksEDSXJ9s3QfZeLLPWwuTaGyWrk6WTrIfCccpGoCTwtZx2GVcCOFj38V8nhyzeZ/nxL6P++Ag/rOpNqkmoDUBIANVJ8eqkod9v1khF8LMnj1Kx4+foKGhYXGLljX4AL5crdLk9BSdOnOaKpUKNaEE27KxNkOiAztcd28/LSzlIfzqnmRiQssX6G1y8AsdC9U01qpONgDRPRYeNzYUMJrHoGAYmroWQGnQGi8sHNJJfBm/N3ihENzH1hdVYx+3qXs6VTDKTZ0azRAA08ihMLlmjJw4AAsBnAhAtDFSLm3ou4lqEx8IF/m+prjBMMSCurq6aM/evVSH4A2Mep0BrYMMl2h+bo4q0P7lS2dxnN0jdA0ASGtgNghj8wY38tm9IKisGTdkC2BgcA0L7fhyTAuEhw+QgWOGjvMQzAQI5DCibHY+mWx1WDguoSqAqmDHxtyGoYtL8aVM+mrrEiAEeOo7/9TQImLWLpsxkyTmMnBfZnpPQPGvGvyJJ5IgxeErwDSaNH7+7OoAYM46m2oYqnPFBTymY6Vpj7e+aJxWCM2a1wMXMeASzeCcXANWNkxdfJq1D6egJky/ivM+TDMcUoTJwjHHG1owSAmttpoCgQHUo1Su14QbODowCBKZsM75uQX60auvArggYiAyxOIJhMDoClCovV0VACyyzkmD5jQxqU8sqxYMVjC7gAMhNRY2AERM31BC63rADbraN7DyCADQoWG2pDovFgtjhvbZpERwXwmJL7ZoHr/FN6NtCQFAGCE9AhNuKBcQ34c1Ga6EaRfWEQp3gL4aVCyVqQ5LqYH1m9A4c5HG84q7+NSoV6/pAjXbhuO6FrkBSiygx5bMVuAbbZewXLVj8BdXD4RWLsJgGLx1Al4AAAicpIcM4QNfd0Ui1pZDytxFWN1XW7EKTYRWVsCugAhkhAFA4AK+yhVMsQBfQNAMEHAM0Q0khWhGaibcz4hSpZSTKOVAwTzXqgBgVDl2EizA5Tt4kltInOU7KmvwA0JUUUJuIcc8iQp6YP6tbbMJX8bMEdNURCJxLQBXzN4PTJ+FN0VgJbRaqBO4hcM5iR6C9hrK3wML4CjDwltNRImpcVyjicZtq4nhSMRxbUSTIKSy+/D51TlA16schhC4ha3ZX0TRLXfgyCBFA9JPnoMFZSJk8xK389s8ocHUmehCcIGopotlhEOmSms5sggvuL/g/674umheD4RmYKjlAgAA62MLYJekFgcwb0ViUgPEoiEBRJFeE+xfRR5QRl7ClgNuQzRqgfERAJCB5ZtIXipIHaNQQ0OUxfFcZ04REETznt8WVnFDcEw4QeyFyogkYWidzZTP6yA/XWNSNCThYYG9QHAtEFoPOEGRngLG0RTofA6pqliA22Z8XYT3hNVac3CUUef5OBNiKByV826QxjOAqwIQi8dznEAsIWeOg8Qari6xWYRvl4yKA4QLfMURYgEcAsXsXSrDKkxm/1a0aEUMABEzdMkwPXz3NMUvLaK74v9KEKNt/sF3JkwIYDUtCBUSoFFriEaLy0u0vDQn62LB+RifYxfAAdQFTTnGIHjXcoFEMrXM0paKJUoS8mhdJQyeSrfEBSQ6kNrnuTlc2gE/sDVUmp4kStFA82wVBhBn3+SYzeSYEDI0MQ+7gdMOc0yQVwCAtoJooEIjFu6alEmnJanpMDqFCMVFuQxG7cAEN9RhkjVg0syZItUrdQUCeI1NnzNOvkYqzNUAiEfjBdZcEyj5HA7FPmEFnB56WsADKwa+24YiSxa0AcLjMBdhi/DEGIQbEH2UpeDaECaxcTAeVsKxBXjs6wHx6ZrRJj47cAutFQ5xYAB1QKFQJChLWQBca3BwkC5eHhftbs0YVLgjRKVcgiqFipg8h74D990Na3DojTfektQ5mepsrsYBJQOhxPdR8QE531Q2r0kC55Pg4Ct30AJy1IJIYcPsm5gYHCTRQFuZMbqKQ9gSLM7NDa4JSAopl91AJYiBua+0AnWvFifwfjLbTdVKuR0KmQ/2799P7x4+jIjTpFcu1cm+XKVqsRb4uxo/+snrwgvsShs2bULBNFz5aCLkU82QuMdahRVg1czmHLaYisQShPSU5tzAEhjhKiQKgeBs5gxfWYDN2XFgHYbni7twPsERRLoO+B4yVVLEbuYFQouvt6wgIMCWRSQ602D4epANsht61NPTQwe/+lWaX1ikcrmEsrcuhRUnQw3wBUcCBzeNw2rSmayUx6snQohcBi9ISMRSAVtTbhAU+VgoWNYLcoMgpFctlQEqt1BWYQS5gvCAyyEMgkOKkIAQAIHrQvCPEGoGT3mZhD2X84EVpNiqBbg+iSfBAVOX2wB4zpW8lstlyS5hxVwFjp67RNu3bSVrahJioMwKh6/RT2glQp5RNQyV7enMA7oWYKBA8GX/iiuI8JDC8hk9U0iQrYIBskTzmliCyQJz2toWXhVBIS6V8aNwmMOjdgUEGLu7QvPKEvAbXB+B9pYQqbjEZkLlDtW1Pps3rrtm2rtqf9HznJrJFsAIOFag4aDmDr5J7GVz5SwMq2UAPLGMICrwT32VLdrB1vED83fVlrM32/XaEYT3uWji8MjWwFsup8PSjFENGc4fTIxYRwcSHOUCrT7Dah/OD8anZpF+RygSiVwXACaISyzAFz+321WcdGi0IDMJaNkT7buSs2v+CnJUCaLwAPu/GYAigvuBBbTCJ593lb+zJURNQzE7uQEfKEvgBXGOYZoeRRIpkJ0ljG6gNvGukdRMTs3QrVt3UBysnO7soFMnT/1yAEBgYgF8Q98JOCDgASFE0oOYpENzGjWAsonExhU7YSC0AAi1zyQYEvKDSJK1Ke278AsXczjBOQeCtABibftBeDQC3+fjJluJB2uIJaTNzXHdN3g+e1VhwpGQdIbIj4F/rq/db/php9p2AZ44yE/9lgW0OjocLria1Zi81DkvSJhatYMWhBUvsAAvEJCTKHEJPxDeM1S7zFepNvcJOJp42pUEjE1fkilMFIrFFKABCTrXsICBvj6anJ6lWLiXpmZmrg+AxuxsEAUgBOpqpfkgELRIEJpp+soFFKNqwgdsHV5gCa58U9zhtYT3tBX7StgWCC6DAEC59xhiK+B0WVcguL4KoaZriLuEIlGV3bVJ0LumQF3pDukCe553fSR48OBBB4mQJ5RnqZayH7iBlBuaErYhvcIVVqFpge9eGXzEC1ovnn+1/1/53ooawTMH/u6q67hNxg0MNVQRJUQYCatnFNy4dVz1POAT+kjlbxiaLesGB/hXhUDVhW0o1a/IDzTJAfwgR/AC0FSBpraqdletKOUSChwviA5eG4grEcN2VSNFhA+A4EhhcIdXOlNuAIL3yQKg66bFi+WHH1KcSgeHpL9nByFOkh697RvKGgKu8FoPRILTvhROwTn/SvNSCe4H3OAFRNnKFn1pvXP/kBMj3WmSYdXJaIDUamXJ5aW4YR64RmW38sNpcxEF3sTEhLTdr50IsQXohiXLthpBuydoK+Ff0wsEbkWHXwBC2lxXzrbziDDSmA5UZBHLRaHkStM15INkoUEb4dYH3zRQrvrNBkaNLKSu9XKRastFLLhKy7k85fPFIK93xIqkteUbV+UB3AY/d/4iLS3lpC9ow41rSISKhZI8P+SWeBVzH3jgwY8BwDAaYr52LVCjLyDoQL2bmsjqQD5wDw0L0bB41g4PDYBpWLwGTWlYtFYvkYeixank6fzUOC0tqCdAnI6GQmGp57k/b5oYvEX6Kn5uqH6ePPjAv88+/DDNz8/RZVR73T191NPXj9y/j44dfZ+iIESExHZu+9rrb9L5c2dlbn5UJlu4TGemkyqlitw/ncn8EgswjCab6PSlczSU/GeQYZXcSpFy05M0tbgoyP9/PtybZ22E7JAAwcJzl1iAQASKRqOU7euhvv4BjEGKpbpo78bb6J4DYRQ2dVoEGKdOHJHuEruAYzvtp6ZRfr4IgWPxqDwPSMTjyCvCKI5qlElnKdXRSV3Zno8HAKRTZxeooOY+/8YPhMB40Z/Eh7WbTKWoA/l8ZzpNGWgjnelSI439dBdlslm5rlwuU345R5Pjl+jk8Q+psJwXX+bGBxMjt7oMKMqyrPZjnv333UPbd2wVpuUKMIffzM7MytNgfj7IzdD1G2/GNbe3njlq/oqXIgQAMG89mujASUMqAG6Tp6IpFYKEiU3ZKtM1pZxtaTFkKrPmIU98w8EWWhDBkcfLb3AemkNKW5ceH/chl3OLWOw0lSB4MV+QhIjvIYLqKhpwJGCts+CcBaqq1TWuvCdg0djYOOYqUL6QpxpAYDCZC5g4GdBIZEoAwDwsbwgYuCpS+9L+oL6+vu8lkp27cYHmSZHi+xyT4aM+myiyMnw3fN5ieDoKCN3UfVPHvq4Lr4PvwyiswGmuxg8mgLNWLhe9cqmDst3dpR+8+P2/m5oYu1yt1zM9/Wvu7Uhnb08mOzdj/khLu9wcbaW70sjghEhvCW4oEHSOFldc4MNjJ+nShYsSPjkyJZJJySQtboUBuF641JZbbpVrrUY9hg37Q4n5k4OFAPCN55/7Oj1PX/9VTFyT7gmZL/74cAUFS+jM6DkaxVjO5+nmdRvo1lu20JYtm6znn/3qvxHJAjrHLxQnsH1F10PdvQNrdnb19G3tzGQ3RiKxLhacmV6EDnKJK9pnYjbaj9DFfflxWCIurhWG9bDVwkWo2+0RS+Y2WiKpmiGwujg2WVI9l0YbgBsUuBMmPhCJd94ZjiRGugc33AbmXodFhUSLui5hki1JDe7g+ulbtm8b53BUr9XY9DwjFK5BwgvlRuHV3KnJwziW6cz2burtGdyM7U3Jjs4hSUoM1YbyVljDylR4967tdOuWTfIWSKVSlZBXrWrggxpHALtUzE8sLs6fKhWW3wOv/Jy794HwXpsDrkNoDjuZTO+aL/QMbvgr+NdNkEFzEBo7k2lKd/XS4uISXKlXWD0ei1IHylF2I35A8fobb1C2d4jCxSUuevRSuYQiwumA6Y+sHV4/sv7mLa8ODWRPh6PhVCQS9ROJRKWvvz/XlelK5QoF88zJszRxecrk+M/WALDbYTACvuHOL3MBNNyYm5maRvJzcWLs4slLF84egTXM47IcRiEQnk2/2QLgY98SE8FxfveePeb0QvV5y6r9pe957VZJZ5qZPC0j2tFPqVRSNMFdWwhDiUQEI0Yx7HOdz+GuHyBls11ClBmAxP27MPcEgoyQweMskQkzzG0uAJqCiV+amrZf+PdDM8uLxY5sV9b48p//acfMzEz57Ojo7JnRk1PHjh65eG70zPlA2EWM5WCwv1cDrTsB+Xmrvib33HPPSfvjFEZibEwH0kYsFjPHa0vxSydmvpFOd38hZLgaC5RGotHT3UPZnm5JNNYMr6EoFt+ZSgiDc4OyAwu3oJlyuUp9uK6K0MrP4zmZmVtYoM0b1suz+0Q8RtmuLjp9FnnIQD+dHj1Lfb29NLu4QL2I4TlUdxtuuklS55+8+Vbh0Hf/9fj89MT0pQsX5mAVedj6YiD4crAtBtquM/e16jV/FW23AWDhc81m9tMPPvRnOLrW0Mx++HI/hBpENMhi4Smfa1gIUCoWKZtJg2xsKpRK1I3Fs2VUICA3PJMQnN/TGe7vF41fQpiKIGEZwPfXfvYzqdtZ85zGJpG4lBGvh4cGaW5piXZt2yp+vIB9bmuNTU4hh0jJtWzunOkxgD96/Y0L3/vud/7l8pkzp6qWNefU60vX0LZ/XS9KPvDcA+Ytjbv2P3jv/v/u7elO8uLZUrj5cAapZhqJTBixnBc1j+xwK9idn9gsFwqSNG1Yt46aYN8fv/ZT2gjNciHCRNTRkZIcnTWbADDTs3N0157dItBRfvdncIAmkbj48khLpc1cY3R1dlI3XOXcxUt0x67b6d0Pj8ixQrksUaAHyVOuVPLeOvz+93/+0x9/bf7y5bF8Pl8eGxuzr0fwdqL27LPPqtdSF1/WUhOpYZjpo5s3bUrVa1W6edMmCNlJw/wU5uJFumffXe2qbGx8AlnXMs3MzUn85Sc35y+N0Z0QbnBgQMrjTgjPYPD5M+fOwSpqklSNT03RRVw7PDwEl0lRuVKhO3fvhlVlQKY56u3O0tTsvJAbV45NWNoGfjoEa9u9Y7uU2Au5HHOEdsumjVs337r1i9k1a62evt7TG/atsZ/8zJPu/ffff2MAnP6P09pifbaAe25FbrJtYWFBqyKszMzPS0znF5L4TY0l7G/ZtJlu2XIz/H6YFsD+64JX2Bj0D48fh9lOyqNqfmtzEQvlvPzA3fvAGVmp2u7eewd8PkPHT51WFWfTphyyOBaUf7PjtlvhGjEhxQG40NjUNBWKqjJsWE0FxPbtMgdnkXfvHgkByPsRYL+QDHWNTxYK43/8qU/Zz97oy9JPPvlkONHTs3PXyMg3R3bu2hsCd4zcfnv7JYNZaHsJAl24PEYgR/h6guLw4SjcggXdd8ceMH5UhD/8wYe0H0Ln4SInzoyiUgup/gIEHAQHsKnPg+R279wp158+e5aG4HZzAJQFTCVVYbMAwPbtGZH0W903Kte9e+SoVI7LAGYcLqSaqyZT1PLho0e2ly9fnn/hhRfcGwJAAxF+uV5PhTzvvs89+rn/WpifNzLI5ePw3TgKkgx8kEMYL467r+cuXGgDND07S8dPnKResHexVBSL4Tc/mbjKKJG333abXHdidJR6YOqcpk7OzIjWOQrwnL3d3dQFXrnqfVCs76dvv019iDgM5hiE5d8wrXMjVVcNmJpVr5+v1arvlSrVlyemp1/7p3S65B886N0QAPz5yle+EkKWsHbfffd9e/vWbZ8qQbN/eP+B9nkQjXRcOcyxVTApcqHDfszkxoUIk97Y+Djt3L5NrjkGU2e+YEsJY7DALCxHj9XeB+aqbmJ6Rsg2B26p81PrVsOeO8eOVarX6mcr1cqR3MLiWwuLi2dtzytR2EUUiJU2Z7M17nX+Sn8vwFbwVC6XTJrm3Y8/9viLucUlMwsiZA3FOF5De/weL1eHKz8Xx8ZUBYfcfAb1exGhjV2EzZgZm6vE0fMX6L677vyIhmfBMxwdllDKFgCkvEUizyo86b9aVnO5WimfRnj8cG5u9s18qTCuN70SKrGyHm0g8800M9WqA+V4W7duheIPXnfTcNVMkK2gHvaG9+255+937rj9jxZnZ+izDz30kdfVJ8Dms3Pz4te6aUqY5HDXB4BmIFAawGVWmDRbxtGTJ6m/tweJ0CJ8vUy1ZlNemFZgyBseHsLqQrlcOlmtVt6fnpl6u9aoT6O6KDkNv+JHItVQuWyBQ1wWGH7uqYT1V/vDh1UB4BT4qaeeSkX7+u74/KOf+99SoRhaM9iPBKUGFrak5WRzo2HNMAQeEOLjz8/feZfuXaHhdz84QuvXrhENL+aWqcKvrAYvMcqrK56DlNd26/XaFOqDE5VS5b2p6el3Go6zCEsvobqqeJFyLVFPWM1m02OBD0Fgv5WLfwKfa9YCyAzNsbm54ZG9e7+2e+euz3NjYc/OHdQV9NdK0N7hDz+gB++/v/0bDpdHkNyw2TM782sinA9wgcRtNX6kheLEgnbHy5XqsUI+f3hufv49SLfsG0bZ1LRKxXXrFcOw78xm3VOnTvmHDh3y/F/jn7VcEwC2gi996UtJlGYjn3/88VcqpXLkALTL7N76vH/0mLSx2AQ5yWGBuSHBjUh2EU5k6viUSsWLlVr1aD6XfwfR4qinO8Wwa5SRslX8UqnR2LjRRjLvAUoPeYnv/wb/judjq0G2gkv5mcGRbXf8ze6R3V88dew4bd64AWS1jCLHoR6EPH4vl/tu/BYXv5UFoiojaTlbrVSO5nK5t1D0jBoQmCCwHmlWjarRyA8OOr8tgW8IALaCp59+OlHV9Z1PPPbYDzPprjg3JticuafXtJo+LCBfKBVOIyM7Mrew9FahsHhJ982S5zhg6CgYWruKoX/bAt/wX42xFYwuLfXu3b71maGh4acbzUYlny+cQQz+YHZm7q1StTqNSUpeKFRu1mq1BGJWi6F/FwW+YQDYCp555plwvtnsCkUiGctvogSJ1DTXrerJZDVRr//aGPp3AoAWCE888YSeyWR0CKpBs95vgqF/E5//AxOJWVncjulBAAAAAElFTkSuQmCC</encodedImage>
+        </image>
+ </images>
+    <maps>
+        <map>
+            <name>ivrea</name>
+            <width>800</width>
+            <height>600</height>
+            <label_type>0</label_type>
+            <label_location>0</label_location>
+            <highlight>0</highlight>
+            <expandproblem>1</expandproblem>
+            <markelements>0</markelements>
+            <show_unack>0</show_unack>
+            <severity_min>0</severity_min>
+            <show_suppressed>0</show_suppressed>
+            <grid_size>20</grid_size>
+            <grid_show>1</grid_show>
+            <grid_align>1</grid_align>
+            <label_format>0</label_format>
+            <label_type_host>2</label_type_host>
+            <label_type_hostgroup>2</label_type_hostgroup>
+            <label_type_trigger>2</label_type_trigger>
+            <label_type_map>2</label_type_map>
+            <label_type_image>2</label_type_image>
+            <label_string_host />
+            <label_string_hostgroup />
+            <label_string_trigger />
+            <label_string_map />
+            <label_string_image />
+            <expand_macros>0</expand_macros>
+            <background />
+            <iconmap />
+            <urls />
+            <selements>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Chiaverano Casa Blotto - ???(172.16.16.79) (18:E8:29:8C:5D:54)</label>
+                    <label_location>-1</label_location>
+                    <x>6922</x>
+                    <y>1772</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441243</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Chiaverano Casa Blotto 4(172.16.16.78) (B4:FB:E4:5C:29:54)</label>
+                    <label_location>-1</label_location>
+                    <x>6668</x>
+                    <y>1855</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441232</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Chiaverano Casa Blotto 3(172.16.16.77) (B4:FB:E4:5C:29:F2)</label>
+                    <label_location>-1</label_location>
+                    <x>6926</x>
+                    <y>1647</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441227</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Chiaverano Casa Blotto 2(172.16.16.76) (B4:FB:E4:5C:2A:2F)</label>
+                    <label_location>-1</label_location>
+                    <x>6669</x>
+                    <y>1556</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441222</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Chiaverano Casa Blotto 1(172.16.16.75) (B4:FB:E4:5C:2A:27)</label>
+                    <label_location>-1</label_location>
+                    <x>6445</x>
+                    <y>1650</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441216</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Chiaverano Casa Blotto(172.16.16.74) (C4:AD:34:0D:16:54)</label>
+                    <label_location>-1</label_location>
+                    <x>6669</x>
+                    <y>1647</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441209</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Chiaverano Casa Blotto(172.16.16.73) (74:4D:28:6C:EA:81)</label>
+                    <label_location>-1</label_location>
+                    <x>6669</x>
+                    <y>1647</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441188</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Chiaverano Casa Blotto - Ivrea(172.16.16.72) (18:E8:29:8C:5C:61)</label>
+                    <label_location>-1</label_location>
+                    <x>6669</x>
+                    <y>1647</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441167</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Ivrea - Chiaverano Casa Blotto(172.16.16.71) (18:E8:29:8C:64:60)</label>
+                    <label_location>-1</label_location>
+                    <x>6118</x>
+                    <y>1758</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2811441123</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>AF24 Ivrea - Tonengo(172.16.16.70) (02:27:22:DA:CF:28)</label>
+                    <label_location>-1</label_location>
+                    <x>5438</x>
+                    <y>1781</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2806675091</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Casa di Riposo 4(172.16.16.39) (B4:FB:E4:5C:2A:0D)</label>
+                    <label_location>-1</label_location>
+                    <x>6426</x>
+                    <y>2282</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2796703545</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Casa di Riposo 3(172.16.16.38) (B4:FB:E4:5C:2A:3D)</label>
+                    <label_location>-1</label_location>
+                    <x>5874</x>
+                    <y>2406</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2796703522</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Casa di Riposo 2(172.16.16.37) (78:8A:20:EC:2A:82)</label>
+                    <label_location>-1</label_location>
+                    <x>6156</x>
+                    <y>2522</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354905</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Casa di Riposo 1(172.16.16.36) (78:8A:20:EC:2B:8A)</label>
+                    <label_location>-1</label_location>
+                    <x>6432</x>
+                    <y>2404</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354865</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Lessolo Casa di Riposo(172.16.16.35) (B8:69:F4:20:25:E4)</label>
+                    <label_location>-1</label_location>
+                    <x>6157</x>
+                    <y>2406</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354792</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Lessolo Casa di Riposo(172.16.16.34) (B8:69:F4:81:1C:B0)</label>
+                    <label_location>-1</label_location>
+                    <x>6156</x>
+                    <y>2281</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354769</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Casa di Riposo - Ivrea(172.16.16.33) (78:8A:20:E4:4E:73)</label>
+                    <label_location>-1</label_location>
+                    <x>6155</x>
+                    <y>2154</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354716</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Ivrea - Lessolo Casa di Riposo(172.16.16.32) (18:E8:29:32:6B:C5)</label>
+                    <label_location>-1</label_location>
+                    <x>6138</x>
+                    <y>2002</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354641</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Nomaglio 4(172.16.16.25) (78:8A:20:EC:18:B6)</label>
+                    <label_location>-1</label_location>
+                    <x>4015</x>
+                    <y>2218</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354308</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Nomaglio 3(172.16.16.24) (78:8A:20:EC:2B:3B)</label>
+                    <label_location>-1</label_location>
+                    <x>3812</x>
+                    <y>2401</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354300</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Nomaglio 2(172.16.16.23) (78:8A:20:EC:2B:96)</label>
+                    <label_location>-1</label_location>
+                    <x>3639</x>
+                    <y>2310</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354290</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Nomaglio 1(172.16.16.22) (78:8A:20:EC:2B:90)</label>
+                    <label_location>-1</label_location>
+                    <x>3816</x>
+                    <y>2215</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763354248</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Municipio 4(172.16.16.49) (78:8A:20:EC:2A:75)</label>
+                    <label_location>-1</label_location>
+                    <x>4748</x>
+                    <y>3115</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763328879</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Municipio 3(172.16.16.48) (78:8A:20:EC:2D:98)</label>
+                    <label_location>-1</label_location>
+                    <x>4791</x>
+                    <y>3244</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763328848</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Municipio 2(172.16.16.47) (78:8A:20:EC:18:3E)</label>
+                    <label_location>-1</label_location>
+                    <x>4995</x>
+                    <y>3328</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763328822</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Municipio 1(172.16.16.46) (78:8A:20:EC:2B:0F)</label>
+                    <label_location>-1</label_location>
+                    <x>5206</x>
+                    <y>3242</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763326336</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Condominio 3(172.16.16.8) (78:8A:20:AC:EF:DB)</label>
+                    <label_location>-1</label_location>
+                    <x>5309</x>
+                    <y>2400</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763325123</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Condominio 2(172.16.16.7) (78:8A:20:AC:F0:F7)</label>
+                    <label_location>-1</label_location>
+                    <x>5523</x>
+                    <y>2307</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763325118</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Condominio 1(172.16.16.6) (78:8A:20:E4:DE:63)</label>
+                    <label_location>-1</label_location>
+                    <x>5308</x>
+                    <y>2207</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763324771</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino 6(172.16.16.18) (78:8A:20:AC:EF:B8)</label>
+                    <label_location>-1</label_location>
+                    <x>4562</x>
+                    <y>2631</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763324013</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino 5(172.16.16.17) (78:8A:20:AC:F4:26)</label>
+                    <label_location>-1</label_location>
+                    <x>4345</x>
+                    <y>2524</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763324005</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino 4(172.16.16.16) (78:8A:20:18:40:3F)</label>
+                    <label_location>-1</label_location>
+                    <x>4559</x>
+                    <y>2432</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2763323995</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Settimo Medie 5(172.16.16.65) (78:8A:20:EC:85:B7)</label>
+                    <label_location>-1</label_location>
+                    <x>5866</x>
+                    <y>3494</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2762122082</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Settimo Medie 4(172.16.16.64) (78:8A:20:EC:84:F7)</label>
+                    <label_location>-1</label_location>
+                    <x>5696</x>
+                    <y>3491</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2762122075</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Settimo Medie 3(172.16.16.63) (78:8A:20:EC:85:8D)</label>
+                    <label_location>-1</label_location>
+                    <x>5545</x>
+                    <y>3494</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2762122065</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Settimo Medie 2(172.16.16.62) (78:8A:20:EC:85:07)</label>
+                    <label_location>-1</label_location>
+                    <x>5406</x>
+                    <y>3493</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2762122057</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Settimo Medie 1(172.16.16.61) (78:8A:20:EC:19:87)</label>
+                    <label_location>-1</label_location>
+                    <x>5250</x>
+                    <y>3494</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2762122030</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Calea 4(172.16.16.69) (78:8A:20:EC:2C:65)</label>
+                    <label_location>-1</label_location>
+                    <x>6075</x>
+                    <y>3380</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447421</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Calea 3(172.16.16.31) (78:8A:20:EC:2C:88)</label>
+                    <label_location>-1</label_location>
+                    <x>6163</x>
+                    <y>3468</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447387</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Calea 2(172.16.16.30) (78:8A:20:EC:2B:80)</label>
+                    <label_location>-1</label_location>
+                    <x>6428</x>
+                    <y>3468</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447380</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Calea 1(172.16.16.29) (78:8A:20:EC:18:D3)</label>
+                    <label_location>-1</label_location>
+                    <x>6489</x>
+                    <y>3379</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447262</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Lessolo Calea(172.16.16.28) (B8:69:F4:07:C7:8C)</label>
+                    <label_location>-1</label_location>
+                    <x>6293</x>
+                    <y>3379</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447249</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Lessolo Calea(172.16.16.68) (B8:69:F4:81:14:A0)</label>
+                    <label_location>-1</label_location>
+                    <x>6293</x>
+                    <y>3379</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447218</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Calea - Montalto Mulino(172.16.16.27) (78:8A:20:E4:4D:72)</label>
+                    <label_location>-1</label_location>
+                    <x>6293</x>
+                    <y>3147</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761447200</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino - Lessolo Calea(172.16.16.26) (78:8A:20:E4:4E:6E)</label>
+                    <label_location>-1</label_location>
+                    <x>6281</x>
+                    <y>3023</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761446631</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Settimo Medie 2(172.16.16.60) (B8:69:F4:08:0A:85)</label>
+                    <label_location>-1</label_location>
+                    <x>5692</x>
+                    <y>3388</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761443981</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Settimo Medie 1(172.16.16.59) (CC:2D:E0:F3:3F:D5)</label>
+                    <label_location>-1</label_location>
+                    <x>5344</x>
+                    <y>3393</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761443962</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Montalto Mulino 2(172.16.16.67) (CC:2D:E0:14:BC:32)</label>
+                    <label_location>-1</label_location>
+                    <x>5475</x>
+                    <y>2661</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761443909</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Settimo Medie(172.16.16.58) (6C:3B:6B:E2:72:AC)</label>
+                    <label_location>-1</label_location>
+                    <x>5503</x>
+                    <y>3290</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761443879</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Settimo Medie - Montalto Mulino(172.16.16.51) (FC:EC:DA:DC:18:01)</label>
+                    <label_location>-1</label_location>
+                    <x>5504</x>
+                    <y>3187</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761443866</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino - Settimo Medie(172.16.16.50) (FC:EC:DA:DC:1C:4E)</label>
+                    <label_location>-1</label_location>
+                    <x>5492</x>
+                    <y>3057</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2761443712</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino 3(172.16.16.15) (78:8A:20:AC:F1:BA)</label>
+                    <label_location>-1</label_location>
+                    <x>4564</x>
+                    <y>2933</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2759307943</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino 2(172.16.16.14) (78:8A:20:AC:EF:B0)</label>
+                    <label_location>-1</label_location>
+                    <x>4345</x>
+                    <y>2840</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2759307880</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino 1(172.16.16.13) (78:8A:20:AC:EF:B4)</label>
+                    <label_location>-1</label_location>
+                    <x>4564</x>
+                    <y>2751</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2759307848</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Nomaglio(172.16.16.21) (B8:69:F4:20:22:5E)</label>
+                    <label_location>-1</label_location>
+                    <x>3812</x>
+                    <y>2308</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2757237389</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Nomaglio(172.16.16.41) (B8:69:F4:81:1C:64)</label>
+                    <label_location>-1</label_location>
+                    <x>4019</x>
+                    <y>2308</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2757237322</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Nomaglio - Montalto Condominio(172.16.16.20) (78:8A:20:E4:4E:47)</label>
+                    <label_location>-1</label_location>
+                    <x>4255</x>
+                    <y>2309</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2757237292</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Condominio - Nomaglio(172.16.16.19) (78:8A:20:AC:52:8A)</label>
+                    <label_location>-1</label_location>
+                    <x>4629</x>
+                    <y>2308</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2757237227</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Lessolo Municipio(172.16.16.45) (B8:69:F4:20:25:C0)</label>
+                    <label_location>-1</label_location>
+                    <x>4997</x>
+                    <y>3243</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756960501</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Lessolo Municipio(172.16.16.44) (B8:69:F4:81:1C:BC)</label>
+                    <label_location>-1</label_location>
+                    <x>5002</x>
+                    <y>3113</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756960027</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Lessolo Municipio - Montalto Mulino(172.16.16.43) (78:8A:20:E4:4F:EF)</label>
+                    <label_location>-1</label_location>
+                    <x>5009</x>
+                    <y>2968</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756959999</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino - Lessolo Municipio(172.16.16.42) (78:8A:20:E4:4F:F4)</label>
+                    <label_location>-1</label_location>
+                    <x>4994</x>
+                    <y>2808</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756959970</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Montalto Mulino 2(172.16.16.40) (B8:69:F4:08:09:11)</label>
+                    <label_location>-1</label_location>
+                    <x>4563</x>
+                    <y>2526</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756720830</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Montalto Mulino 1(172.16.16.12) (CC:2D:E0:F3:39:1D)</label>
+                    <label_location>-1</label_location>
+                    <x>4565</x>
+                    <y>2837</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756720795</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Montalto Mulino(172.16.16.11) (B8:69:F4:81:14:16)</label>
+                    <label_location>-1</label_location>
+                    <x>4993</x>
+                    <y>2667</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756720409</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Mulino - Montalto Condominio(172.16.16.10) (82:2A:A8:CF:4A:85)</label>
+                    <label_location>-1</label_location>
+                    <x>4996</x>
+                    <y>2551</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756720371</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Condominio - Montalto Mulino(172.16.16.9) (82:2A:A8:CF:4B:00)</label>
+                    <label_location>-1</label_location>
+                    <x>4994</x>
+                    <y>2428</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756720313</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>RB Montalto Condominio(172.16.16.5) (CC:2D:E0:16:39:41)</label>
+                    <label_location>-1</label_location>
+                    <x>5309</x>
+                    <y>2306</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756516390</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Switch Montalto Condominio(172.16.16.4) (CC:2D:E0:14:C0:70)</label>
+                    <label_location>-1</label_location>
+                    <x>4994</x>
+                    <y>2306</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2756516356</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Montalto Condominio - Ivrea(172.16.16.3) (82:2A:A8:CF:4A:83)</label>
+                    <label_location>-1</label_location>
+                    <x>4996</x>
+                    <y>2178</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2753726350</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Ivrea - Montalto Condominio(172.16.16.2) (82:2A:A8:CF:47:7C)</label>
+                    <label_location>-1</label_location>
+                    <x>5138</x>
+                    <y>1993</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2753726180</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                <selement>
+                    <elementtype>4</elementtype>
+                    <label>Router Ivrea(185.168.97.1) (E4:8D:8C:1B:48:74)</label>
+                    <label_location>-1</label_location>
+                    <x>5626</x>
+                    <y>1857</y>
+                    <elementsubtype>0</elementsubtype>
+                    <areatype>0</areatype>
+                    <width>200</width>
+                    <height>200</height>
+                    <viewtype>0</viewtype>
+                    <use_iconmap>0</use_iconmap>
+                    <selementid>2753725289</selementid>
+                    <elements />
+                    <icon_off>
+                        <name>Workstation_(64)</name>
+                    </icon_off>
+                    <icon_on />
+                    <icon_disabled />
+                    <icon_maintenance />
+                    <application />
+                    <urls />
+                </selement>
+                </selements>
+            <shapes>
+                <shape>
+                    <type>0</type>
+                    <x>150</x>
+                    <y>250</y>
+                    <width>50</width>
+                    <height>50</height>
+                    <border_type>1</border_type>
+                    <border_width>2</border_width>
+                    <border_color>000000</border_color>
+                    <text />
+                    <font>9</font>
+                    <font_size>11</font_size>
+                    <font_color>000000</font_color>
+                    <text_halign>0</text_halign>
+                    <text_valign>0</text_valign>
+                    <background_color />
+                    <zindex>0</zindex>
+                </shape>
+            </shapes>
+            <lines />
+            <links>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441209</selementid1>
+                    <selementid2>2811441227</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441209</selementid1>
+                    <selementid2>2811441222</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441209</selementid1>
+                    <selementid2>2811441216</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441188</selementid1>
+                    <selementid2>2811441232</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441188</selementid1>
+                    <selementid2>2811441243</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441188</selementid1>
+                    <selementid2>2811441209</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441167</selementid1>
+                    <selementid2>2811441188</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2811441126</selementid1>
+                    <selementid2>2811441167</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354796</selementid1>
+                    <selementid2>2763354868</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354796</selementid1>
+                    <selementid2>2763354905</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354796</selementid1>
+                    <selementid2>2763354868</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2796703545</selementid1>
+                    <selementid2>2763354772</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354772</selementid1>
+                    <selementid2>2763354796</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354720</selementid1>
+                    <selementid2>2763354772</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354646</selementid1>
+                    <selementid2>2763354720</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447249</selementid1>
+                    <selementid2>2761447421</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447249</selementid1>
+                    <selementid2>2761447387</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447249</selementid1>
+                    <selementid2>2761447380</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447249</selementid1>
+                    <selementid2>2761447333</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447249</selementid1>
+                    <selementid2>2761447242</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447210</selementid1>
+                    <selementid2>2761447242</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761447196</selementid1>
+                    <selementid2>2761447210</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443991</selementid1>
+                    <selementid2>2762122082</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443991</selementid1>
+                    <selementid2>2762122075</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443991</selementid1>
+                    <selementid2>2762122065</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443965</selementid1>
+                    <selementid2>2762122057</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443965</selementid1>
+                    <selementid2>2762122051</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443923</selementid1>
+                    <selementid2>2761447196</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443991</selementid1>
+                    <selementid2>2761443879</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443965</selementid1>
+                    <selementid2>2761443879</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443879</selementid1>
+                    <selementid2>2761443869</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443715</selementid1>
+                    <selementid2>2761443869</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2761443923</selementid1>
+                    <selementid2>2761443715</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2757237411</selementid1>
+                    <selementid2>2763354300</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2757237411</selementid1>
+                    <selementid2>2763354290</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354251</selementid1>
+                    <selementid2>2757237411</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354308</selementid1>
+                    <selementid2>2757237329</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2757237411</selementid1>
+                    <selementid2>2757237329</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2757237329</selementid1>
+                    <selementid2>2757237296</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2757237227</selementid1>
+                    <selementid2>2757237296</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756960504</selementid1>
+                    <selementid2>2763328848</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756960504</selementid1>
+                    <selementid2>2763328822</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756960504</selementid1>
+                    <selementid2>2763327722</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763328879</selementid1>
+                    <selementid2>2756960033</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756960033</selementid1>
+                    <selementid2>2756960504</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756960033</selementid1>
+                    <selementid2>2756960003</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756959988</selementid1>
+                    <selementid2>2756960003</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720840</selementid1>
+                    <selementid2>2763324005</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720840</selementid1>
+                    <selementid2>2763324013</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720840</selementid1>
+                    <selementid2>2763323995</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720821</selementid1>
+                    <selementid2>2759307957</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720821</selementid1>
+                    <selementid2>2759307898</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720821</selementid1>
+                    <selementid2>2759307854</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720440</selementid1>
+                    <selementid2>2761443923</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720440</selementid1>
+                    <selementid2>2756959988</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720840</selementid1>
+                    <selementid2>2756720440</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720440</selementid1>
+                    <selementid2>2756720821</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720371</selementid1>
+                    <selementid2>2756720440</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756720313</selementid1>
+                    <selementid2>2756720371</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756516476</selementid1>
+                    <selementid2>2763325123</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756516476</selementid1>
+                    <selementid2>2763325118</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756516476</selementid1>
+                    <selementid2>2763325114</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756516377</selementid1>
+                    <selementid2>2756720313</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756516377</selementid1>
+                    <selementid2>2756516476</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2756516377</selementid1>
+                    <selementid2>2757237227</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2753726366</selementid1>
+                    <selementid2>2756516377</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2753726249</selementid1>
+                    <selementid2>2753726366</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2753725737</selementid1>
+                    <selementid2>2811441126</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2753725737</selementid1>
+                    <selementid2>2806675091</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2763354948</selementid1>
+                    <selementid2>2753725737</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2753725737</selementid1>
+                    <selementid2>2763354646</selementid2>
+                    <linktriggers />
+                </link>
+                <link>
+                    <drawtype>0</drawtype>
+                    <color>00CC00</color>
+                    <label />
+                    <selementid1>2753725737</selementid1>
+                    <selementid2>2753726249</selementid2>
+                    <linktriggers />
+                </link>
+                </links>
+        </map>
+    </maps>
+</zabbix_export>
